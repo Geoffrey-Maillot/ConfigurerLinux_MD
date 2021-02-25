@@ -1,4 +1,4 @@
-# Configurer Linux Ubuntu (wsl2)
+# Configurer Linux Ubuntu
 
 `[]` = Contenue optionel ou variable (ne pas écrire les `[]`)
 
