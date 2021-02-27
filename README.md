@@ -79,7 +79,7 @@ _Manip à faire uniquement sur un linux WSL_
 ```bash
 $sudo apt install apt-transport-https
 $sudo wget -O /etc/apt/trusted.gpg.d/wsl-transdebian.gpg https://arkane-systems.github.io/wsl-transdebian/apt/wsl-transdebian.gpg
-$chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
+$sudo chmod a+r /etc/apt/trusted.gpg.d/wsl-transdebian.gpg
 $sudo touch /etc/apt/sources.list.d/wsl-transdebian.list  #Crée le fichier
 $sudo nano /etc/apt/sources.list.d/wsl-transdebian.list  #Editer le fichier
 ```
