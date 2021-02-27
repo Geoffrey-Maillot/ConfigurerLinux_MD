@@ -21,6 +21,7 @@ $ /~ #Se rendre dans son dossier utilisateur (équivalent à `/home/[user]`), da
 ```
 
 #### WSL:
+[WSL](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#:~:text=Pour%20afficher%20la%20liste%20des,wsl%20%2D%2Dlist%20%2D%2Donline%20.)
 
 - Basculer entre la VM et WSL :
 
