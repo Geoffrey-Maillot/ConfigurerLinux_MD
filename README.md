@@ -63,14 +63,12 @@ _Manip à faire uniquement sur un linux WSL_
 [Plus d'info](https://blog.ineat-group.com/2021/02/comment-bien-demarrer-avec-wsl2-windows-10/)
 <br>
 
-### Cgroup
+#### Commencer par mettre à jour le Runtime windows et Ubuntu
 
-- Rentrer seulement ces deux lignes de commandes
+- Windows: 
+    - Télécharger le Runtime selon votre version (x64 ou x86) et installer le
+- Linux : Suivre les instructions selon votre version Ubuntu [Runtime Ubuntu](https://docs.microsoft.com/fr-fr/dotnet/core/install/linux-ubuntu#2004-)
 
-```bash
-  $sudo mkdir /sys/fs/cgroup/systemd
-  $sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
-```
 
 ### NameSpaces
 
@@ -102,6 +100,15 @@ $wsl genie -s #Lance Ubuntu avec genie
 ```
 
 - A partir de maintenant il faut toujours lancer WSL avec cette commande si l'on utilise des appli comme Docker, MongoDB ou d'autres appli qui necessites les NameSpaces
+
+### Cgroup
+
+- Rentrer seulement ces deux lignes de commandes
+
+```bash
+  $sudo mkdir /sys/fs/cgroup/systemd
+  $sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+```
 
 **ATTENTION: Quand on lance wsl avec "genie" le PATH windows n'est plus disponible et donc les commandes comme `explorer.exe` ou `code .` ne sont plus utilisable. Une solution est d'installé une extention vscode `remote-WSL` qui permet d'ouvrir le répectoire WSL en 1 clic.**
 
